@@ -2,7 +2,7 @@
 
 import Image from "next/image"
 import Link from "next/link"
-import { Github, Linkedin, Mail, ExternalLink, Download, ArrowDown } from 'lucide-react'
+import { Github, Linkedin, Mail, Download, ArrowDown } from 'lucide-react'
 import { Button } from "@/components/ui/button"
 import { AnimatedText, ClientMotion } from "@/components/client-animations"
 
@@ -61,28 +61,21 @@ export function HeroSection() {
               transition={{ delay: 1, duration: 0.8 }}
             >
               <Link
-                href="https://linkedin.com/in/murad-pitafi"
+                href="https://www.linkedin.com/in/nithin-joseph-4b1753199/"
                 target="_blank"
                 className="text-gray-600 hover:text-[#11C5A8] dark:text-gray-400 dark:hover:text-[#11C5A8] transition-colors transform hover:scale-110 duration-300"
               >
                 <Linkedin className="w-6 h-6" />
               </Link>
               <Link
-                href="https://github.com/murad-pitafi"
+                href="https://github.com/NithinJosephVarghese13"
                 target="_blank"
                 className="text-gray-600 hover:text-[#F7F8FA] dark:text-gray-400 dark:hover:text-white transition-colors transform hover:scale-110 duration-300"
               >
                 <Github className="w-6 h-6" />
               </Link>
               <Link
-                href="https://kaggle.com/muradpitafi"
-                target="_blank"
-                className="text-gray-600 hover:text-[#11C5A8] dark:text-gray-400 dark:hover:text-blue-400 transition-colors transform hover:scale-110 duration-300"
-              >
-                <ExternalLink className="w-6 h-6" />
-              </Link>
-              <Link
-                href="mailto:pitafimurad99@gmail.com"
+                href="mailto:nithinjosephvarghese@gmail.com"
                 className="text-gray-600 hover:text-[#D6A84B] dark:text-gray-400 dark:hover:text-red-400 transition-colors transform hover:scale-110 duration-300"
               >
                 <Mail className="w-6 h-6" />
@@ -100,8 +93,8 @@ export function HeroSection() {
               stiffness: 100,
             }}
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-full overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
-              <Image src="/images/profile.jpg" alt="Nithin Joseph Varghese" fill className="object-cover" priority />
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+              <Image src="/images/profile.jpg" alt="Nithin Joseph Varghese" fill className="object-cover object-top" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#3A7BFF]/20 to-[#11C5A8]/20 mix-blend-overlay" />
             </div>
           </ClientMotion>

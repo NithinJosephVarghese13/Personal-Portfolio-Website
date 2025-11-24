@@ -97,7 +97,7 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">Full Stack Developer</h3>
+                    <h3 className="text-xl font-bold text-black dark:text-white">Full Stack Developer</h3>
                     <p className="text-purple-600 dark:text-purple-400 font-medium">Nesa Software</p>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">January 2025 - July 2025</p>
@@ -120,7 +120,7 @@ export default function Home() {
               <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md p-6 border-l-4 border-purple-600 hover:-translate-y-1 transition-transform duration-300">
                 <div className="flex flex-col md:flex-row md:items-center justify-between mb-4">
                   <div>
-                    <h3 className="text-xl font-bold">MERN Stack Developer</h3>
+                    <h3 className="text-xl font-bold text-black dark:text-white">MERN Stack Developer</h3>
                     <p className="text-purple-600 dark:text-purple-400 font-medium">Techglitz Global Private Limited</p>
                   </div>
                   <p className="text-gray-600 dark:text-gray-400 mt-2 md:mt-0">July 2023 - January 2024</p>
@@ -144,7 +144,7 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             <AnimatedCard delay={0.2}>
-              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 text-black dark:text-white">
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 text-black dark:text-white bg-white dark:bg-gray-900">
                 <CardHeader>
                   <CardTitle>AI Agent using Django, LangGraph and permit</CardTitle>
                   <CardDescription>Utility-Based Agents</CardDescription>
@@ -165,25 +165,25 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       LangGraph
                     </Badge>
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       permit.io
                     </Badge>
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       Python
                     </Badge>
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       LLM
                     </Badge>
@@ -193,7 +193,7 @@ export default function Home() {
             </AnimatedCard>
 
             <AnimatedCard delay={0.3}>
-              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 text-black dark:text-white">
+              <Card className="h-full border-0 shadow-lg hover:shadow-xl transition-shadow duration-300 text-black dark:text-white bg-white dark:bg-gray-900">
                 <CardHeader>
                   <CardTitle>Privacy First Analytics Dashboard</CardTitle>
                   <CardDescription>Analytics Dashboards with AI insights</CardDescription>
@@ -209,25 +209,25 @@ export default function Home() {
                   <div className="flex flex-wrap gap-2 mt-4">
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       RAG
                     </Badge>
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       RBAC
                     </Badge>
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       CI/CD
                     </Badge>
                     <Badge
                       variant="outline"
-                      className="bg-purple-100/50 dark:bg-purple-900/50 hover:bg-purple-200 transition-colors duration-300"
+                      className="bg-purple-100 dark:bg-purple-900/50 text-purple-800 dark:text-purple-200 border-purple-300 dark:border-purple-700 hover:bg-purple-200 dark:hover:bg-purple-800 transition-colors duration-300"
                     >
                       GDPR Compliance
                     </Badge>

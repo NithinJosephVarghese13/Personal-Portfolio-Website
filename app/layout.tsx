@@ -10,7 +10,7 @@ const inter = Inter({ subsets: ["latin"] })
 export const metadata: Metadata = {
   title: "Nithin Joseph Varghese | Full Stack Developer",
   description:
-    "Portfolio of Nithin Joseph Varghese, Full Stack Developer specializing in machine learning, deep learning, and data science"
+    "Full-Stack Developer specializing in building fast, secure, and scalable web applications. I design resilient backends with modern frameworks, craft clean and optimized frontends, and deliver products that actually solve problems."
 }
 
 export default function RootLayout({
