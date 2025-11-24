@@ -1,26 +1,72 @@
 @import "tailwindcss";
+@plugin "tailwindcss-animate";
+@custom-variant dark (&:where(.dark, .dark *));
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@theme {
+  --color-border: #1F242D;
+  --color-input: #1F242D;
+  --color-ring: #3A7BFF;
+  --color-background: #0A1A2F;
+  --color-foreground: #F7F8FA;
+  --color-primary-DEFAULT: #0A1A2F;
+  --color-primary-foreground: #F7F8FA;
+  --color-secondary-DEFAULT: #11C5A8;
+  --color-secondary-foreground: #0A1A2F;
+  --color-destructive-DEFAULT: #D6A84B;
+  --color-destructive-foreground: #0A1A2F;
+  --color-muted-DEFAULT: #CED2D9;
+  --color-muted-foreground: #0A1A2F;
+  --color-accent-DEFAULT: #3A7BFF;
+  --color-accent-foreground: #F7F8FA;
+  --color-popover-DEFAULT: #1F242D;
+  --color-popover-foreground: #F7F8FA;
+  --color-card-DEFAULT: #1F242D;
+  --color-card-foreground: #F7F8FA;
+  --border-radius-lg: var(--radius);
+  --border-radius-md: calc(var(--radius) - 2px);
+  --border-radius-sm: calc(var(--radius) - 4px);
+  @keyframes accordion-down {
+    from { height: "0" }
+    to { height: "var(--radix-accordion-content-height)" }
+  }
+  @keyframes accordion-up {
+    from { height: "var(--radix-accordion-content-height)" }
+    to { height: "0" }
+  }
+  --animation-accordion-down: accordion-down 0.2s ease-out;
+  --animation-accordion-up: accordion-up 0.2s ease-out;
+  --breakpoint-2xl: 1400px;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+@utility container {
+  width: 100%;
+  margin-inline: auto; 
+  padding-inline: 2rem; 
+  @screen 2xl {
+    max-width: 1400px; 
   }
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@layer base {
+  /* Palette variables removed. Color tokens are fixed below. */
+  /* Light mode (default) */
+  :root {
+    --radius: 0.5rem;
+  }
+
+  /* Dark mode will use the same fixed tokens; component-level classes are hard-coded. */
+}
+
+@layer base {
+  * {
+    border-color: #1F242D;
+  }
+  body {
+    background-color: #0A1A2F;
+    color: #F7F8FA;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
 }
