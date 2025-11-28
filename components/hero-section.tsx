@@ -93,7 +93,7 @@ export function HeroSection() {
               stiffness: 100,
             }}
           >
-            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl">
+            <div className="relative w-64 h-64 md:w-80 md:h-80 rounded-lg overflow-hidden border-4 border-white dark:border-gray-800 shadow-xl animate-gentle-bob">
               <Image src="/images/profile.jpg" alt="Nithin Joseph Varghese" fill className="object-cover object-top" priority />
               <div className="absolute inset-0 bg-gradient-to-tr from-[#3A7BFF]/20 to-[#11C5A8]/20 mix-blend-overlay" />
             </div>
